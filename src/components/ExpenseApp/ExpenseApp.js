@@ -1,4 +1,5 @@
 import { useState } from "react";
+import OverViewComponent from "../OverrViewComponent/OverViewComponent";
 import TransActionComponent from "../TransActionComponent/TransActionComponent";
 
 
@@ -7,15 +8,13 @@ const ExpenseApp = () => {
     const [income,setIncome]=useState(0);
     const [transactions,setTransactions]=useState([]);
 
+    const addTransaction= (formValues)=>{
+        setTransactions([...transactions,{...formValues,id: Date.now}]);
+        console.log(transactions);
+    }
+
   return <section className="container">
-    <div className="topSection">
-        <p>Balance : {income-expense}</p>
-        <button>Add</button>
-    </div>
-    <div className="resultSection">
-        <p>Expense : {expense}</p>
-        <p>Income : {income}</p>
-    </div>
+    <OverViewComponent income={income} expense={expense} addTransaction={addTransaction}/>
     <TransActionComponent transactions={transactions}/>
   </section>;
 };
