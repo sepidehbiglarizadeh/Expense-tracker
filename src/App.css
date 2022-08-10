@@ -63,10 +63,43 @@
 .btn--primary{
     color: #fff;
     background-color: #6d28D9;
+    border: none;
+    padding: 0.8rem 1rem;
 }
 
 .cancel{
     background-color: #fff;
     color: #DC2626;
     border: 1px solid #DC2626;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 1rem 1.2rem;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    margin-left: 1rem;
+}
+
+.radioBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.radioBox label{
+    margin-left: 0.3rem;
+    font-size: 1.4rem;
 }
