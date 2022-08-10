@@ -8,7 +8,7 @@ const OverViewComponent = ({income,expense,addTransaction}) => {
     <>
       <div className="topSection">
         <p>Balance : {income - expense}</p>
-        <button onClick={()=>setIsShow((prevState)=> !prevState)}>
+        <button onClick={()=>setIsShow((prevState)=> !prevState)} className={`btn ${isShow && "cancel"}`}>
             {isShow ? "Cancel" : "Add"}
         </button>
       </div>

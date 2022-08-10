@@ -26,7 +26,7 @@ const TransActionForm = ({addTransaction}) => {
         <input type="radio" value="income" name="type" onChange={changeHandler} checked={formValues.type==="income"}/>
         <label>Income</label>
       </div>
-      <button type="submit">Add transaction</button>
+      <button type="submit" className="btn btn--primary">Add transaction</button>
     </form>
   );
 };

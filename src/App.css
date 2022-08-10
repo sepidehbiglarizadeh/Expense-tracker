@@ -49,3 +49,24 @@
     font-weight: bold;
     color: green;
 }
+
+.btn{
+    outline: none;
+    padding: 0.5rem 1rem;
+    background-color: #EDE9FE;
+    color: #6d28D9;
+    border-radius: 5px;
+    border: 1px solid #6d28D9;
+    cursor: pointer;
+}
+
+.btn--primary{
+    color: #fff;
+    background-color: #6d28D9;
+}
+
+.cancel{
+    background-color: #fff;
+    color: #DC2626;
+    border: 1px solid #DC2626;
+}
